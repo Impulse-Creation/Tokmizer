@@ -2,6 +2,11 @@
 
 All notable user-facing changes to the Tokmizer plugin.
 
+## 0.5.4
+
+- Savings now reach your dashboard reliably: pending reports are sent on
+  every plan sync, not only while the background helper is running.
+
 ## 0.5.3
 
 - Your dashboard now credits all savings. Savings from privacy-protected
