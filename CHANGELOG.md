@@ -2,6 +2,12 @@
 
 All notable user-facing changes to the Tokmizer plugin.
 
+## 0.5.3
+
+- Your dashboard now credits all savings. Savings from privacy-protected
+  commands (whose names are never sent) were dropped entirely; they now
+  count under a generic "other" bucket, names still never leave your machine.
+
 ## 0.5.2
 
 - Reducer savings now count: each shortened reply is credited (estimated by
