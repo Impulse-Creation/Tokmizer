@@ -2,6 +2,13 @@
 
 All notable user-facing changes to the Tokmizer plugin.
 
+## 0.5.12
+
+- Ten more commands now come back compact out of the box: python, node,
+  printf, open, scp, tr, cut, file, black and journalctl.
+- Commands run through your agent's shell tool are recognized more
+  precisely, so savings apply more often.
+
 ## 0.5.4
 
 - Savings now reach your dashboard reliably: pending reports are sent on
