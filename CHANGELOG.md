@@ -2,6 +2,12 @@
 
 All notable user-facing changes to the Tokmizer plugin.
 
+## 0.5.14
+
+- Reducer savings now show up in your local `tkr gain` report too, not
+  only on the online dashboard. Command counts stay measured; reducer
+  savings are credited as clearly estimated amounts.
+
 ## 0.5.13
 
 - File listings keep every file name, including names containing spaces.
