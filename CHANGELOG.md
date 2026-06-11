@@ -2,6 +2,18 @@
 
 All notable user-facing changes to the Tokmizer plugin.
 
+## 0.5.13
+
+- File listings keep every file name, including names containing spaces.
+  Very long listings end with an honest "N more" marker instead of
+  silently dropping entries.
+- Linked accounts stay linked: a few failed background syncs can no
+  longer switch a machine back to an anonymous setup.
+- Savings stats from Codex sessions now match what the agent actually
+  loaded, so reported numbers stay honest.
+- Output optimization no longer skips the first command right after a
+  cold start, and behaves better when several terminals run at once.
+
 ## 0.5.12
 
 - Ten more commands now come back compact out of the box: python, node,
