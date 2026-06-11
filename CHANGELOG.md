@@ -2,6 +2,15 @@
 
 All notable user-facing changes to the Tokmizer plugin.
 
+## 0.5.15
+
+- Rust files read by your agent now come back clean again. A 0.5.14
+  refinement could garble Rust sources with lifetime annotations; this
+  is fully repaired and covered by tests.
+- Permission errors from file searches stay visible even on very large
+  listings, so partial scans are never mistaken for complete ones.
+- More robustness around account resets and concurrent terminals.
+
 ## 0.5.14
 
 - Reducer savings now show up in your local `tkr gain` report too, not
