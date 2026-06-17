@@ -1,0 +1,23 @@
+Copyright (c) 2026 Impulse-Creation. All rights reserved.
+
+This repository is the public showcase for the Tokmizer plugin (free tier). It is
+provided for viewing and evaluation only.
+
+You MAY:
+  - view, read, and reference this source for evaluation purposes.
+
+You MAY NOT, without the prior written permission of Impulse-Creation:
+  - copy, redistribute, publish, or host this software or any part of it;
+  - modify, adapt, translate, or create derivative works from it;
+  - use it, in whole or in part, for any commercial purpose;
+  - remove or alter this notice.
+
+The Tokmizer compression engine and all proprietary logic are NOT included in this
+repository and remain the exclusive property of Impulse-Creation.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,0 +1,100 @@
+# Changelog
+
+All notable user-facing changes to the Tokmizer plugin.
+
+## 0.5.15
+
+- Rust files read by your agent now come back clean again. A 0.5.14
+  refinement could garble Rust sources with lifetime annotations; this
+  is fully repaired and covered by tests.
+- Permission errors from file searches stay visible even on very large
+  listings, so partial scans are never mistaken for complete ones.
+- More robustness around account resets and concurrent terminals.
+
+## 0.5.14
+
+- Reducer savings now show up in your local `tkr gain` report too, not
+  only on the online dashboard. Command counts stay measured; reducer
+  savings are credited as clearly estimated amounts.
+
+## 0.5.13
+
+- File listings keep every file name, including names containing spaces.
+  Very long listings end with an honest "N more" marker instead of
+  silently dropping entries.
+- Linked accounts stay linked: a few failed background syncs can no
+  longer switch a machine back to an anonymous setup.
+- Savings stats from Codex sessions now match what the agent actually
+  loaded, so reported numbers stay honest.
+- Output optimization no longer skips the first command right after a
+  cold start, and behaves better when several terminals run at once.
+
+## 0.5.12
+
+- Ten more commands now come back compact out of the box: python, node,
+  printf, open, scp, tr, cut, file, black and journalctl.
+- Commands run through your agent's shell tool are recognized more
+  precisely, so savings apply more often.
+
+## 0.5.4
+
+- Savings now reach your dashboard reliably: pending reports are sent on
+  every plan sync, not only while the background helper is running.
+
+## 0.5.3
+
+- Your dashboard now credits all savings. Savings from privacy-protected
+  commands (whose names are never sent) were dropped entirely; they now
+  count under a generic "other" bucket, names still never leave your machine.
+
+## 0.5.2
+
+- Reducer savings now count: each shortened reply is credited (estimated by
+  level) in your online dashboard alongside command compression.
+
+## 0.5.1
+
+- Documentation refresh: before/after examples for every reducer level, on
+  npm, the site docs and this repository.
+
+## 0.5.0
+
+- New response reducer (Smart and Pro): `tkr reducer off|light|balanced|max`
+  makes the assistant's replies shorter at the level you pick. Same substance,
+  fewer tokens. Code, errors and security content always stay intact. Also
+  available as `/tkr-reducer`.
+
+## 0.4.5
+
+- Maintenance release: every install now lands on the same current build, with
+  the reliable `/tkr-update` and the `tkr telemetry` command.
+
+## 0.4.2
+
+- `/tkr-update` now reliably installs the newest version instead of sometimes
+  reporting "already up to date" when an update is available.
+
+## 0.4.1
+
+- New `tkr telemetry` command: check status, turn it on or off, or erase the
+  telemetry stored on your machine.
+- Telemetry is on by default so your online dashboard shows your savings right
+  away. Only command names are ever sent, never your code, and you can turn it
+  off anytime with `tkr telemetry off`.
+- Plan changes and paid features sync on their own in the background.
+
+## 0.4.0
+
+- Output compression tuned for higher fidelity: long values (tokens, URLs, paths) are
+  kept whole instead of being truncated; directory diffs, PR descriptions and commit
+  logs keep the detail an agent needs to act.
+- Stronger credential redaction across command lines and captured output.
+- Faster, lighter: lower memory use and buffered output on large logs.
+- Multi-host support: Claude Code and Codex via native hooks; other agents and plain
+  shells via the universal shim.
+
+## Earlier
+
+- Free tier on every device, no account required.
+- `/tkr-gain`, `/tkr-status`, `/tkr`, `/tkr-link`, `/tkr-update` commands.
+- Quiet-by-default operation with recommended settings.

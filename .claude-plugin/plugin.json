@@ -1,0 +1,10 @@
+{
+  "name": "tokmizer",
+  "version": "0.5.17",
+  "description": "Tokmizer reduces token consumption for AI agents.",
+  "author": {
+    "name": "Impulse Création",
+    "email": "contact@tokmizer.com"
+  },
+  "homepage": "https://tokmizer.com"
+}

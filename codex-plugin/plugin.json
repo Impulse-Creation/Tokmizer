@@ -1,0 +1,21 @@
+{
+  "name": "tokmizer",
+  "version": "0.5.4",
+  "description": "Tokmizer reduces token consumption for OpenAI Codex.",
+  "author": "Tokmizer",
+  "homepage": "https://tokmizer.com",
+  "hooks": [
+    {
+      "event": "after_tool_call",
+      "matcher": {
+        "tool": [
+          "shell",
+          "bash",
+          "exec",
+          "run_shell_command"
+        ]
+      },
+      "command": "tkr-codex-hook"
+    }
+  ]
+}
